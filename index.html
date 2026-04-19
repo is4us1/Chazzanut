@@ -504,6 +504,47 @@
     .videos-grid { grid-template-columns: 1fr; }
     .btn-gold, .btn-outline { font-size: 14px; padding: 12px 24px; }
   }
+
+  /* ─── TABLET ─── */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .videos-grid { grid-template-columns: repeat(2, 1fr); }
+    .contact-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* ─── DESKTOP ─── */
+  @media (min-width: 1025px) {
+    .videos-grid {
+      max-width: 1300px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .about-inner { max-width: 900px; }
+    .about-text { font-size: 22px; }
+    .hero-tagline { font-size: 22px; max-width: 700px; }
+    .contact-grid {
+      max-width: 900px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .contact-card { padding: 48px 36px; }
+    .section-title { margin-bottom: 28px; }
+    .video-info { padding: 24px 28px 28px; }
+    .video-title { font-size: 22px; }
+    .about { padding: 160px 40px; }
+    .videos { padding: 160px 40px; }
+    .contact { padding: 160px 40px; }
+    .yt-banner { padding: 100px 40px; }
+    .yt-text { font-size: 36px; }
+    .hero-cta { gap: 24px; }
+    .btn-gold, .btn-outline { font-size: 18px; padding: 18px 44px; }
+  }
+
+  /* ─── LARGE DESKTOP ─── */
+  @media (min-width: 1400px) {
+    .videos-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 </style>
 </head>
 <body>
